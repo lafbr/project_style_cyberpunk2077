@@ -1,0 +1,162 @@
+/* ****************** NÃO APAGAR ****************** */
+@font-face {
+    font-family: cyberpunk;
+    src: url(../fonts/CyberwayRiders-lg97d.ttf);
+}
+
+@font-face {
+    font-family: rajdhani;
+    src: url(../fonts/Rajdhani-Light.ttf);
+}
+
+/* ****************** NÃO APAGAR ****************** */
+:root{
+
+    /*Variaveis de paleta de cores*/
+
+
+--color-yellow:#F9F002;
+
+--color-blue:#4ABED5;
+
+--color-dark:#111111;
+
+--color-white:#FFFFFF;
+
+    /*VARIAVEIS DE ESPAÇAMENTOS*/
+
+--spacing-md: 20px;
+
+--spacing-lg: 50px;
+
+--spacing-xl: 180px;
+
+
+    /*VARIAVEIS DE TIPOGRAFIA*/
+
+--font-size-title: 150px;
+
+--font-size-subtitle: 50px;
+
+--font-size-text: 25px;
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+
+}
+
+
+body {
+
+   background-color: var(--color-dark);
+   font-family: rajdhani;
+}
+
+
+h1{
+font-family: cyberpunk;
+color: var(--color-yellow);
+font-size: var(--font-size-title);
+text-align: center;
+margin-top: var(--spacing-md);
+letter-spacing: 4px;
+
+
+
+}
+
+h2{
+
+text-align: center;
+margin-bottom: var(--spacing-md) ;
+color: var(--color-blue);
+font-size: var(--font-size-subtitle);
+
+}
+
+p{
+color: var(--color-yellow);
+font-size: var(--font-size-text);
+font-weight: 700;
+margin: var(--spacing-md);
+text-align: center;
+
+}
+
+
+.div_image_banner{
+    text-align: center;
+    margin-inline: var(--spacing-md);
+}
+
+   
+
+img{
+    border: 5px;
+    border-style: solid;
+    border-color: var(--color-white);
+
+    filter: grayscale(1);
+    transition: 0.5s;
+
+    &:hover{
+
+    filter: grayscale(0);
+    scale: 1.1;
+
+    }
+
+}
+
+.link_externo{
+
+text-align: center;
+margin-top: var(--spacing-lg);
+margin-bottom: var(--spacing-lg);
+
+}
+
+a{
+
+
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: var(--font-size-text);
+    padding-block: var(--spacing-md);
+    padding-inline: var(--spacing-xl);
+    text-decoration: none;
+    font-weight: 900;
+    border: 5px;
+    border-style: solid;
+    border-color: var(--color-white);
+
+    transition: .5s;
+
+    &:hover{
+
+        background-color: var(--color-yellow);
+        color: var(--color-dark);
+        
+
+
+    }
+}
+
+.galeria{
+display: flex;
+justify-content: center;
+margin-inline: var(--spacing-md);
+gap: 25px;
+
+
+
+
+}
+
+
+    
